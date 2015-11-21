@@ -13,7 +13,6 @@ Repository contains:
 
 ### run_analysis()
 
-  
 1. Read the features file to get column names for data and then read the actual data with the column names. Finaly combine subjects, labels and set by columns. This is done for both training and test data. Then combine training data and test data by rows
 2. Grep columns with mean or std in feature name from features. First column is the added label => increase columns by 1. Finally select activity label column and columns with mean or std -values
 3. Read activity names from file. Index activity names with activity labels in dataset, and store as factor type 
