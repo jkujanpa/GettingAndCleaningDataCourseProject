@@ -11,12 +11,17 @@ Repository contains:
 * tidy_data.txt, the result file of the analysis that holds tidy data set.
 * CodeBook.md
 
-### run_analysis()
+### run_analysis.R
 
+#### Prerequisites
+
+1. In order to get your script working, you need to install `dplyr`-packace to your R environment from the CRAN repository.
+2. You need to have Samsung data (UCI HAR Dataset) together with `run_analysis.R`-script in your working directory.
+
+#### 
 1. Read the features file to get column names for data and then read the actual data with the column names. Finaly combine subjects, labels and set by columns. This is done for both training and test data. Then combine training data and test data by rows
 2. Grep columns with mean or std in feature name from features. First column is the added label => increase columns by 1. Finally select activity label column and columns with mean or std -values
 3. Read activity names from file. Index activity names with activity labels in dataset, and store as factor type 
 4. Tidy the dataset by using group_by and summarise_each functionalities from dplyr library and write the result to file.
   
-  
- 
+
